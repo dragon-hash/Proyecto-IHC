@@ -1,0 +1,993 @@
+Brazil
+****************************************************************
+Imagenes
+
+msgid "Delete sucessfully."	
+msgstr "Excluído com sucesso."
+
+msgid "The extensión image is {0}."	
+msgstr "A extensão da imagem é {0}"
+
+msgid "The size image is {0}."	
+msgstr "O tamanho da imagem é {0}."
+
+msgid "The image has upload sucessfully."	
+msgstr "A imagem foi enviada com sucesso."
+
+msgid "The image has not upload."	
+msgstr "A imagem não foi enviada."
+
+msgid "The size image is invalid."	
+msgstr "O tamanho da imagem não é válido."
+
+msgid "The image is null."
+msgstr "A imagem é nula."
+------------------------------------------------------------------
+Boton tuerca
+
+msgid "Profile Picture"	
+msgstr "Imagem de perfil"
+
+msgid "Edit my Profile"	
+msgstr "Edite meu Perfil"
+
+msgid "Total to pay"	
+msgstr "Total o Pagaré"
+-------------------------------------------------------------------
+Grafica Reportes
+
+msgid "Clients more frequently"
+msgstr "Clientes com mais frequência"
+
+msgid "Quantity of replacement parts by category"
+msgstr "Quantidade de peças de reposição por categoria"
+
+msgid "Number of mechanics hired by service"
+msgstr "Número de mecânicos contratados pelo serviço"
+
+msgid "Number of Mechanics"
+msgstr "Número de Mecânica"
+
+msgid "Quantity"
+msgstr "Quantidade"
+
+msgid "Report of part"
+msgstr "Relatório de peça"
+
+msgid "Classified by categories"
+msgstr "Classificados por categorias"
+
+msgid "Parts of <b>{point.name}</b> is <b>{point.value}</b>"
+msgstr "Reposição de <b>{point.name}</b> é <b>{point.value}</b>"
+
+msgid "Back"
+msgstr "De volta"
+
+msgid "Report of personnel"
+msgstr "Relatório de pessoal"
+
+msgid "Classified by service"
+msgstr "Classificado por serviço"
+
+msgid "Reports"	
+msgstr "Relatórios"
+
+msgid "Report One"	
+msgstr "Relatório Um"
+
+msgid "Report Two"	
+msgstr "Relatório Dois"
+
+msgid "Report Three"	
+msgstr "Relatório Três"
+
+msgid "Report Four"	
+msgstr "Relatório Quatro"
+
+msgid "Report Five"	
+msgstr "Relatório Cinco"
+-----------------------------------------------------------
+Validacion
+
+msgid "enter name please"	
+msgstr "digite o nome por favor"
+
+msgid "enter surname please"
+msgstr "digite o sobrenome por favor"
+
+msgid "enter email please"
+msgstr "digite o correio eletrônico por favor"
+
+msgid "enter password please"
+msgstr "digite a senha por favor"
+
+msgid "enter address please"
+msgstr "digite o endereço por favor"
+**************************************************
+msgid "enter rol please"
+msgstr "digite o funções por favor"
+**************************************************
+msgid "enter salary please"
+msgstr "digite o salário por favor"
+
+msgid "enter phone number please"
+msgstr "digite o número de telefone por favor"
+***************************************************
+msgid "enter replacement please"
+msgstr "digite o Substituições por favor"
+
+msgid "enter description please"
+msgstr "digite o descrição por favor"
+
+msgid "enter unit price please"
+msgstr "digite o preço unitário por favor"
+***************************************************
+msgid "enter category please"
+msgstr "digite o categoria por favor"
+***************************************************
+msgid "enter license please"
+msgstr "digite o licença por favor"
+
+msgid "enter maker please"
+msgstr "digite o marcar por favor"
+
+msgid "enter colour please"
+msgstr "digite o cor por favor"
+****************************************************
+msgid "enter amount please"
+msgstr "digite o quantidade por favor"
+
+msgid "enter price total please"
+msgstr "digite o preço total por favor"
+
+msgid "enter service please"
+msgstr "digite o serviços por favor"
+----------------------------------------------------------------
+Generales
+
+msgid "Administrator"	
+msgstr "Administração"
+
+msgid "Client"	
+msgstr "Cliente"
+
+msgid "We offer the essence of perfection."	
+msgstr "Nós oferecemos a essência da perfeição."
+
+msgid "CONTACT"
+msgstr "Contato"
+
+msgid "Dashboard"	
+msgstr "Diretoria"
+
+msgid "List"	
+msgstr "Listar"
+
+msgid "save"	
+msgstr "SALVAR"
+
+msgid "add"	
+msgstr "ADICIONAR"
+
+msgid "Created"	
+msgstr "Criação"
+
+msgid "Modified"	
+msgstr "Modificação"
+
+msgid "Actions"
+msgstr "Ações "
+
+msgid "View"	
+msgstr "Visão"
+
+msgid "Edit"	
+msgstr "Edite"
+
+msgid "Delete"	
+msgstr "Excluir"
+
+msgid "Are you sure you want to delete # {0}?"	
+msgstr "¿Tem certeza de que deseja excluir # {0}?"
+
+*********************************************************************
+Pie Pagina
+
+msgid "before"	
+msgstr "Antes"
+
+msgid "after"	
+msgstr "Depois de"
+
+msgid "previous"	
+msgstr "Anterior"
+
+msgid "next"	
+msgstr "Seguindo "
+
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"	
+msgstr "Página {{page}} a {{pages}}, monstração {{current}} registro(s) a {{count}} total"
+
+***********************************************************************************************
+Pagina Principal
+
+msgid "Home"	
+msgstr "Principar"
+
+msgid "About Us"	
+msgstr "Sobre nós"
+
+msgid "Register"	
+msgstr "Cadastre-se"
+
+msgid "Working time:"	
+msgstr "Tempo de trabalho:"
+
+msgid "Monday - Friday: 08 AM - 06 PM"	
+msgstr "Segunda a sexta: das 8h às 18h"
+
+msgid "Find us:"	
+msgstr "Encontre-nos em:"
+
+msgid "Alto Selva Alegre J 22, Arequipa City, Peru"	
+msgstr "Alto Selva Alegre J 22, cidade de Arequipa, Peru"
+
+msgid "Dedicated to our clients"	
+msgstr "DEDICADO AOS NOSSOS CLIENTES"
+
+msgid "Vision of the company"	
+msgstr "VISÃO DA EMPRESA"
+
+msgid "Mission of the company"	
+msgstr "MISSÃO DA EMPRESA"
+
+msgid "Provide a good automotive maintenance service in general, keeping the cars of our customers in a state of efficient and safe operation, satisfying their needs and expectations in the best possible time. Knowing that you and your vehicle are the most important thing."
+msgstr "Fornecer um bom serviço de manutenção automotiva em geral, manter os carros de nossos clientes em um estado operacional eficiente e seguro. Satisfazendo suas necessidades e expectativas no melhor momento possível. Saiba que você e seu veículo são os mais importantes."
+
+msgid "To become the leading and reliable workshop at the zone level, in the next 3 years, once that objective has been achieved, to remain as the best in the market, offering service for modern cars and diesel units, being recognized for the quality of our services, Honesty and fair prices."	
+msgstr "Para nos tornarmos a principal e confiável oficina no nível da zona, nos próximos 3 anos, uma vez atingido esse objetivo, permaneceremos como os melhores do mercado, oferecendo serviços para carros modernos e unidades a diesel, sendo reconhecidos pela qualidade de nossos serviços , honestidade e preços justos."
+
+msgid "Spanish"	
+msgstr "Espanhol"
+
+msgid "English"	
+msgstr "Inglês"
+
+msgid "Portuguese"	
+msgstr "Português"
+
+msgid "Auto Repair & Service"	
+msgstr "Conserto de Veículos"
+
+Aumento de la pagina principal
+
+msgid "Send your mail at"
+msgstr "Envie seu email em"
+
+msgid "Shop"	
+msgstr "Loja"
+
+msgid "Products"	
+msgstr "Produtos"
+
+msgid "Shopping Cart"	
+msgstr "Carrinho de compras"
+
+msgid "Contact"	
+msgstr "Contato"
+
+msgid "Your Vehicle is"	
+msgstr "Seu veículo é"
+
+msgid "Save in our Hands"	
+msgstr "Economize em nossas mãos"
+
+msgid "We specialize in complete auto care at a low cost and in a"	
+msgstr "Somos especializados em atendimento completo a um baixo custo e em um"
+
+msgid "professional manner."	
+msgstr "maneira profissional."
+
+msgid "Booking Now"	
+msgstr "Reservar agora"
+
+msgid "The Best Car Repair and"	
+msgstr "O melhor reparo do carro e"
+
+msgid "Maintenance Auto Service"	
+msgstr "Serviço de manutenção automática"
+
+msgid "Welcome to Hot Metal"	
+msgstr "Bem-vindo ao Hot Metal"
+
+msgid "Repair and Car Service"	
+msgstr "Serviço de reparo e carro"
+
+msgid "We offer a wide range of hydraulic cartridge valves, customized hydraulic integrated manifolds and valves for hydraulic breaking systems"	
+msgstr "Oferecemos uma ampla gama de válvulas de cartucho hidráulico, coletores hidráulicos integrados personalizados e válvulas para sistemas de ruptura hidráulica"
+
+msgid "We work with clients big and small across a range of sectors and we utilise all forms of media to get your name out there in a way that’s right for you. We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we can’t boast years and years of service we can ensure you that is a good thing in this industry"	
+msgstr "Trabalhamos com clientes grandes e pequenos em vários setores e utilizamos todas as formas de mídia para divulgar seu nome da maneira certa para você. Temos várias equipes diferentes em nossa agência especializadas em diferentes áreas de negócios, para ter certeza de que não receberá um serviço genérico e, embora não possamos nos orgulhar de anos e anos de serviço, podemos garantir que você é uma coisa boa nesse setor "
+
+msgid "Professional car cleaning"	
+msgstr "Limpeza profissional de automóveis"
+
+msgid "Monthly car inspections"	
+msgstr "Inspeções mensais de carro"
+
+msgid "Car painting assets and service"	
+msgstr "Serviços e serviços de pintura de carros"
+
+msgid "Creating new car assets and wheels"	
+msgstr "Criando novos carros e rodas"
+
+msgid "Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone"	
+msgstr "Nosso serviço mais popular é o nosso Recepcionista Virtual. Sabemos que às vezes é difícil chegar ao telefone"
+
+msgid "Our History"	
+msgstr "Nossa história"
+
+msgid "Our Mission"	
+msgstr "Nossa missão"
+
+msgid "If you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting"	
+msgstr "Se você está no meio de alguma coisa e não quer perder a ligação importante que pode ser o começo de uma emocionante"
+
+msgid "Read More"	
+msgstr "Leia mais"
+
+msgid "Total experts"	
+msgstr "Total de especialistas"
+
+msgid "Service Done"	
+msgstr "Serviço concluído"
+
+msgid "Happy Client"	
+msgstr "Clientes felizes"
+
+msgid "Total Service"	
+msgstr "Serviço total"
+
+msgid "Our Features"	
+msgstr "Nossos Recursos"
+
+msgid "Suspension Repair"	
+msgstr "Reparo da suspensão"
+
+msgid "Get A Quote"	
+msgstr "Obter uma cotação"
+
+msgid "Engine Overhaul"	
+msgstr "Revisão do mecanismo"
+
+msgid "Wheel Alignment"	
+msgstr "Alinhamento das rodas"
+
+msgid "Our Latest Works"	
+msgstr "Nossos trabalhos mais recentes"
+
+msgid "View All"	
+msgstr "Ver tudo"
+
+msgid "Diagnostics"	
+msgstr "Diagnóstico"
+
+msgid "Engine"	
+msgstr "Mecanismo"
+
+msgid "Repairs"	
+msgstr "Reparos"
+
+msgid "Wheel Service"	
+msgstr "Serviço de roda"
+
+msgid "Air Conditioner"	
+msgstr "Ar condicionado"
+
+msgid "Car Repair Service"	
+msgstr "Serviço de reparo de carro"
+
+msgid "Check out our repair service for your car and get a free clean"	
+msgstr "Confira nosso serviço de reparo do seu carro e faça uma limpeza gratuita"
+
+msgid "Order Now"	
+msgstr "Encomendar agora"
+
+msgid "Our Latest News"	
+msgstr "Nossas últimas notícias"
+
+msgid "Tips for car maintanence"	
+msgstr "Dicas para manutenção do carro"
+
+msgid "Admin"	
+msgstr "Admin"
+
+msgid "comment"	
+msgstr "comentário"
+
+msgid "A lot of auto repair customerss questions the importance of wheel alignment."	
+msgstr "Muitos clientes de reparos automáticos questionam a importância do alinhamento das rodas."
+
+msgid "Tips for car maintanence"	
+msgstr "Dicas para manutenção do carro"
+
+msgid "Expert Workers"	
+msgstr "Trabalhadores especializados"
+
+msgid "Mechanic Worker"	
+msgstr "Trabalhador mecânico"
+
+msgid "Project Manager"	
+msgstr "Gerente de projeto"
+
+msgid "What Client Says"
+msgstr "O que o cliente diz"
+	
+msgid "“We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss.”"
+msgstr "“Sabemos que às vezes é difícil ligar para o telefone se você está no meio de alguma coisa e não quer perder.”"
+
+msgid "Manager"	
+msgstr "Gerente"
+
+msgid "Contact US"	
+msgstr "Entre em contato"
+
+msgid "Contact Info"	
+msgstr "Informações de contato"
+
+msgid "Address:"	
+msgstr "Endereço:"
+
+msgid "Phone:"	
+msgstr "Telefone:"
+
+msgid "Email:"	
+msgstr "Email:"
+
+msgid "Workshop Timeing :"	
+msgstr "Tempo da oficina:"
+
+msgid "Our Services"	
+msgstr "Nossos serviços"
+
+msgid "Engine Diagnostic & Repair"	
+msgstr "Diagnóstico e reparo do motor"
+
+msgid "Maintanence & Inspection"	
+msgstr "Manutenção e inspeção"
+
+msgid "Electrical System Diagnostic"	
+msgstr "Diagnóstico do sistema elétrico"
+
+msgid "Wheel Allignment & Installation"	
+msgstr "Alinhamento e instalação das rodas"
+
+msgid "Air Conditioner Service & Repair"	
+msgstr "Serviço e reparo do ar condicionado"
+
+msgid "Latest News"	
+msgstr "Últimas Notícias"
+
+msgid "Get Usefull Car Maintanence Tips From Our Expets"	
+msgstr "Obtenha dicas úteis sobre manutenção de carros de nossos expets"
+
+msgid "Aug"	
+msgstr "Ago"
+
+msgid "Follow Us:"	
+msgstr "Siga-nos:"
+
+msgid "Copyrights © 2019 All Rights Reserved"	
+msgstr "Direitos autorais © 2019 Todos os direitos reservados"
+
+msgid "Language"	
+msgstr "língua"
+
+**********************************************************
+Registrarse
+
+msgid "Sign Up"	
+msgstr "Cadastre-se"
+
+msgid "Sign Up for Free"	
+msgstr "Cadastre-se gratuitamente"
+
+msgid "First Name"	
+msgstr "Primeiro nome"
+
+msgid "Last Name"	
+msgstr "Apelido"
+
+msgid "Email Address"	
+msgstr "endereço de correio eletrônico"
+
+msgid "Set A Password"	
+msgstr "Definir uma senha"
+
+msgid "Get Started"	
+msgstr "Começar"
+
+********************************************************************************
+Login 
+
+msgid "Write your e-mail, your password will be sent"
+msgstr "Digite seu email, sua senha será enviada para você"
+
+msgid "Write your E-mail"
+msgstr "Digite seu email"
+
+msgid "NEXT"
+msgstr "PRÓXIMO"
+
+msgid "Log In"	
+msgstr "Iniciar sessão"
+
+msgid "Log in with your account"	
+msgstr "Faça o sessão com sua conta"
+
+msgid "Disabled login."	
+msgstr "Início de sessão desativado."
+
+msgid "Write your E-mail"	
+msgstr "Escreva seu correio eletrônico"
+
+msgid "Enter your password"	
+msgstr "Digite sua senha"
+
+msgid "Retype the CAPTCHA code from the image"	
+msgstr "Reescreva o código CAPTCHA da imagem"
+
+msgid "BotDetect CakePHP CAPTCHA Form Validation"	
+msgstr "Validação da forma do BotDetect CakePHP CAPTCHA"
+
+msgid "Change the CAPTCHA code"	
+msgstr "Alterar o código CAPTCHA"
+
+msgid "Speak the CAPTCHA code"	
+msgstr "Ouça o código CAPTCHA"
+
+msgid "Retype the characters from the picture:"	
+msgstr "Reescreva os caracteres na imagem:"
+
+msgid "Forgot Password?"	
+msgstr "Você esqueceu sua senha?"
+
+msgid "LOG IN"	
+msgstr "INICIAR SESSÃO"
+
+msgid "CAPTCHA validation failed, try again."	
+msgstr "CAPTCHA falhou na validação, tente novamente."
+
+msgid "Your username or password is incorrect."	
+msgstr "Seu nome de usuário ou senha está incorreto."
+
+msgid "You are not authorized to access that location."	
+msgstr "Você não está autorizado a acessar este local."
+
+msgid "You are now logged out."	
+msgstr "Agora você está desconectado."
+
+msgid "Login"	
+msgstr "Iniciar sessão"
+
+msgid "Logout"	
+msgstr "fechar Sessão"
+
+msgid "Sign in"	
+msgstr "Cadastre-se"
+
+msgid "Are you sure?"	
+msgstr "Voce esta seguro" 
+
+msgid "The current session will be closed"	
+msgstr "A sessão atual sera fechada"
+ 
+msgid "Yes, Exit! "	
+msgstr "Sim, Sair"
+
+msgid "No, Cancel!"	
+msgstr "Não, Cancelar "
+
+msgid "The provided value is invalid"	
+msgstr "O valor fornecido é inválido"
+
+msgid "Login with Facebook"	
+msgstr "Entrar com o Facebook"
+
+msgid "Login with Google"	
+msgstr "Entrar com o Google"
+
+msgid "Login with Twitter"	
+msgstr "Entrar com o Twitter"
+
+msgid "Return to main page"	
+msgstr "Voltar à página principal"
+
+msgid "Forgot password"	
+msgstr "Esqueceu a senha"
+
+msgid "Get new password"	
+msgstr "Alterar senha"
+
+msgid "Password changed"	
+msgstr "Senha alterada"
+
+msgid "This user does not exist"	
+msgstr "Esse usuário não existe"
+
+------------------------------------------------------
+Tabla Usuarios
+
+msgid "Users"	
+msgstr "Usuários"
+
+msgid "User"	
+msgstr "Usuário"
+
+msgid "User Id"
+msgstr "Code de Usuário"
+
+msgid "View Users"	
+msgstr "Visão Usuários"
+
+msgid "Add User"	
+msgstr "Adicionar Usuário"
+
+msgid "Edit User"	
+msgstr "Edite Usuário"
+
+msgid "Yes"	
+msgstr "ativo"
+
+msgid "No"	
+msgstr "inativo"
+
+msgid "Id"	
+msgstr "Code"
+
+msgid "Name"	
+msgstr "Nome"
+
+msgid "Surname"	
+msgstr "Sobrenome"
+
+msgid "Address"	
+msgstr "Endereço"
+
+msgid "Phone"	
+msgstr "Telefone"
+
+msgid "Email"	
+msgstr "Correio Eletrônico"
+
+msgid "Password"	
+msgstr "Senha"
+
+msgid "Status"	
+msgstr "Estado"
+
+msgid "The user has been saved."	
+msgstr "O usuário foi salvo."
+
+msgid "The user has been deleted."
+msgstr "O usuário foi excluído."
+
+msgid "The user could not be saved. Please, try again."
+msgstr "O usuário não pôde ser salvo. Por favor, tente novamente."
+
+msgid "Related Users"	
+msgstr "Usuários Relacionadas"
+
+msgid "no related Users"	
+msgstr "Usuários não relacionadas"
+
+-------------------------------------------------------
+
+Tabla Roles
+
+msgid "Roles"	
+msgstr "Funções"
+
+msgid "Role"	
+msgstr "Funçõe"
+
+msgid "Role Id"	
+msgstr "Code de Funçõe"
+
+msgid "View Roles"	
+msgstr "Visão funções"
+
+msgid "Add Roles"	
+msgstr "Adicionar funções"
+
+msgid "Add Role"
+msgstr "Adicionar Funçõe"
+
+msgid "Edit Role"	
+msgstr "Edite Funçõe"
+
+msgid "The role has been saved."	
+msgstr "A função foi salva."
+
+msgid "The role has been deleted."
+msgstr "A função foi excluído."
+
+msgid "The role could not be saved. Please, try again."
+msgstr "A função não pôde ser salva. Por favor, tente novamente."
+
+-----------------------------------------------------------------------
+
+Tabla Mecanicos
+
+msgid "Mechanics"	
+msgstr "Mecânicos"
+
+msgid "Service"	
+msgstr "Serviço"
+
+msgid "Salary"	
+msgstr "Salário"
+
+msgid "View Mechanics"	
+msgstr "Visão Mecânicos"
+
+msgid "Add Mechanics"	
+msgstr "Adicionar Mecânicos"
+
+msgid "Add Mechanic"	
+msgstr "Adicionar Mecânico"
+
+msgid "Edit Mechanic"	
+msgstr "Edite Mecânico "
+
+msgid "The mechanic has been saved."	
+msgstr "O mecânico foi salvo."
+
+msgid "The mechanic has been deleted."
+msgstr "O mecânico foi excluído."
+
+msgid "The mechanic could not be saved. Please, try again."
+msgstr "O mecânico não pôde ser salvo. Por favor, tente novamente."
+
+msgid "Related Mechanics"	
+msgstr "Mecânica Relacionada"
+
+msgid "no related Mechanics"	
+msgstr "Mecânica não relacionada"
+
+---------------------------------------------------------------------------------------
+
+Tabla Repuestos
+
+msgid "Replacements"	
+msgstr "Substituições"
+
+msgid "Replacement"	
+msgstr "Substituiçõe"
+
+msgid "Replacement Id"	
+msgstr "Code de Substituiçõe"
+
+msgid "Description"	
+msgstr "Descrição"
+
+msgid "Unit Price"	
+msgstr "Preço unitário"
+
+msgid "View Replacements"	
+msgstr "Visão Substituiçãos"
+
+msgid "Add Replacement"	
+msgstr "Adicionar substituição"
+
+msgid "Add Replacements"	
+msgstr "Adicionar Substituiçãos"
+
+msgid "Edit Replacement"	
+msgstr "Edite substituição "
+
+msgid "The replacement has been saved."
+msgstr "O substituição foi salva."
+
+msgid "The replacement has been deleted."
+msgstr "O substituição foi excluído."
+
+msgid "The replacement could not be saved. Please, try again."
+msgstr "O substituição não pôde ser salvo. Por favor, tente novamente."
+
+msgid "Related Replacements"	
+msgstr "Substituição Relacionada "
+
+msgid "no related Replacements"	
+msgstr "Substituição não relacionada "
+
+---------------------------------------------------------------------
+
+Tabla Categoria
+
+msgid "Category"	
+msgstr "Categoria"
+
+msgid "Category Id"	
+msgstr "Code de Categoria"
+
+msgid "View Categories"	
+msgstr "Visão Categorias"
+
+msgid "Add Category"	
+msgstr "Adicionar Categoria"
+
+msgid "Add Categories"	
+msgstr "Adicionar Categorias"
+
+msgid "Edit Category"	
+msgstr "Edite Categoria"
+
+msgid "The category has been saved."	
+msgstr "A categoria foi salva."
+
+msgid "The category has been deleted."
+msgstr "A categoria foi eliminada."
+
+msgid "The category could not be saved. Please, try again."
+msgstr " A categoria não pôde ser salvo. Por favor, tente novamente "
+
+---------------------------------------------------------------------------
+
+Tabla Automoviles
+
+msgid "Cars"	
+msgstr "Carros"
+
+msgid "View Cars"	
+msgstr "Visão Carros"
+
+msgid "Add Car"	
+msgstr "Adicionar Carro"
+
+msgid "Add Cars"	
+msgstr "Adicionar Carros"
+
+msgid "Edit Car"	
+msgstr "Edite Carro"
+
+msgid "License"	
+msgstr "Licença"
+
+msgid "Maker"	
+msgstr "Marcar"
+
+msgid "Colour"	
+msgstr "Cor"
+
+msgid "The car has been saved."
+msgstr "O carro foi salvo."
+
+msgid "The car has been deleted."
+msgstr "O carro foi excluído."
+
+msgid "The car could not be saved. Please, try again."
+msgstr "O carro não pôde ser salvo. Por favor, tente novamente."
+
+msgid "Related Cars"	
+msgstr "Carros Relacionada"
+
+msgid "no related Cars"	
+msgstr "Carros não relacionada"
+
+----------------------------------------------------------------------------
+
+Tabla Facturas
+
+msgid "Factures"	
+msgstr "Faturas"
+
+msgid "Facture"	
+msgstr "Fatura"
+
+msgid "Facture Id"	
+msgstr "Codigo de Factura"
+
+msgid "View Factures"	
+msgstr "Visão Faturas"
+
+msgid "Add Facture"	
+msgstr "Adicionar Fatura"
+
+msgid "Add Factures"	
+msgstr "Adicionar Faturas"
+
+msgid "Edit Facture"	
+msgstr "Edite Fatura"
+
+msgid "Amount"	
+msgstr "Quantidade"
+
+msgid "Price Total"	
+msgstr "Preço Total"
+
+msgid "The facture has been saved."	
+msgstr "A fatura foi salva."
+
+msgid "The facture has been deleted."
+msgstr "A função foi excluído."
+
+msgid "The facture could not be saved. Please, try again."
+msgstr "A fatura não pôde ser salva. Por favor, tente novamente."
+
+msgid "Related Factures"	
+msgstr "Faturas Relacionada"
+
+msgid "no related Factures"	
+msgstr "Faturas não relacionada"
+
+--------------------------------------------------------------------------------------
+
+Tabla Detalles
+
+msgid "Details"	
+msgstr "Detalhes"
+
+msgid "View Details"	
+msgstr "Visão Detalhes "
+
+msgid "Add Detail"	
+msgstr "Adicionar Detalhe"
+
+msgid "Add Details"	
+msgstr "Adicionar Detalhes"
+
+msgid "Edit Detail"	
+msgstr "Edite Detalhe"
+
+msgid "The detail has been saved."	
+msgstr "Os detalhe foram salvos."
+
+msgid "The detail has been deleted."	
+msgstr "Os detalhe foi excluído."
+
+msgid "The detail could not be saved. Please, try again."
+msgstr "Os detalhe não pôde ser salva. Por favor, tente novamente."
+
+msgid "Related Details"	
+msgstr "Detalhes relacionada"
+
+msgid "no related Details"	
+msgstr "Detalhes não relacionada"
+
+--------------------------------------------------------------------------------------
+
+Tabla Servicios
+
+msgid "Services"	
+msgstr "Serviços"
+
+msgid "Service Id"	
+msgstr "Code de Serviço"
+
+msgid "View Services"	
+msgstr "Visão Serviços"
+
+msgid "Add Services"	
+msgstr "Adicionar Serviços"
+
+msgid "Add Service"	
+msgstr "Adicionar Serviço"
+
+msgid "Edit Service"	
+msgstr "Edite Serviço"
+
+msgid "The service has been saved."	
+msgstr "O serviço foi salvo."
+
+msgid "The service has been deleted."	
+msgstr "O serviço foi excluído."
+
+msgid "The service could not be saved. Please, try again."
+msgstr "O serviço não pôde ser salva. Por favor, tente novamente."
+
+
+
+
+
+

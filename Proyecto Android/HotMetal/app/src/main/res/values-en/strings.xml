@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">HotMetal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">José Zuñiga</string>
+    <string name="nav_header_subtitle">josez@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_principal">Main</string>
+    <string name="menu_carros">Cars</string>
+    <string name="menu_citas">Quotes</string>
+    <string name="menu_facturas">Invoices</string>
+    <string name="menu_reportes">Reports</string>
+
+    <!--Traducciones android studio-->
+    <string name="citasdiap">Choose day of preference</string>
+    <string name="citashorap">Choose time of preference</string>
+    <string name="citasservicio">Solicited service</string>
+    <string name="citasmodelo">Model</string>
+    <string name="citasmarca">Brand</string>
+    <string name="citasreservar">Book an appointment</string>
+    <string-array name="citasservicios">
+        <item>Cambio de bujias</item>
+        <item>Cambio de aceite</item>
+        <item>Cambio de llantas</item>
+    </string-array>
+
+
+    <string name="conexion_btn_reintentar">Retry</string>
+    <string name="conexion_text1">We can\'t connect</string>
+    <string name="conexion_text2">Check if you have activated your data or if you are connected via Wifi</string>
+
+    <string name="principal_registro">Sign in</string>
+    <string name="principal_iniciar_sesion">Log in</string>
+    <string name="principal_text1">DEDICATED TO OUR CUSTOMERS</string>
+    <string name="principal_text2">COMPANY MISSION</string>
+    <string name="principal_text3">Provide a good automotive maintenance service in general, Keep our customers\' cars in an efficient and safe state of operation. Meeting your needs and expectations in the best possible time. Know that you and your vehicle are the most important.</string>
+    <string name="principal_llamada">Call</string>
+    <string name="principal_whatsapp">Whatsapp</string>
+
+    <string name="inicio_sesion_title">Login with your account</string>
+    <string name="inicio_sesion_correo">Enter email</string>
+    <string name="inicio_sesion_clave">Enter your password</string>
+    <string name="inicio_sesion_olvido">Did you forget your password?</string>
+    <string name="inicio_sesion_iniciar">Log in</string>
+    <string name="inicio_sesion_facebook">Login with Facebook</string>
+    <string name="inicio_sesion_gmail">Login with Google</string>
+
+    <string name="registro_title">Sign up free</string>
+    <string name="registro_nombre">Enter Name</string>
+    <string name="registro_apellido">Enter Surname</string>
+    <string name="registro_corrreo">Enter Email</string>
+    <string name="registro_clave">Enter Password</string>
+    <string name="registro_captcha">Type the characters of the image</string>
+    <string name="registro_registrarse">Sign in</string>
+
+    <string name="recuperar_title">Enter your email, your password will be sent to you</string>
+    <string name="recuperar_corrreo">Enter Email</string>
+    <string name="recuperar_siguiente">Following</string>
+
+    <string name="home_auto">Cars</string>
+    <string name="home_citas">Quotes</string>
+    <string name="home_facturas">Invoices</string>
+    <string name="home_reportes">Reports</string>
+
+    <string name="factura_index_1">Invoice N° 00001</string>
+    <string name="factura_index_2">Invoice N° 00002</string>
+    <string name="factura_index_3">Invoice N° 00003</string>
+
+    <string name="citas_index_1">Quote N° 001</string>
+    <string name="citas_index_2">Quote N° 002</string>
+    <string name="citas_index_3">Quote N° 003</string>
+
+    <string name="reportes_index_1">1st Report</string>
+    <string name="reportes_index_2">2nd Report</string>
+    <string name="reportes_index_text1">Amount Invoices per Month</string>
+    <string name="reportes_index_text2">Parts Percentage</string>
+
+    <string name="auto_matricula">Enrollment</string>
+    <string name="auto_marca">Brand</string>
+    <string name="auto_modelo">Model</string>
+    <string name="auto_color">Colour</string>
+    <string name="auto_color_car">Dark Lead</string>
+    <string name="auto_editar">Apply changes</string>
+
+    <string name="facturas_view_repuesto">Replacement</string>
+    <string name="facturas_view_cantidad">Quantity</string>
+    <string name="facturas_view_precio">Replacement Price</string>
+    <string name="facturas_view_servicios">Service</string>
+    <string name="facturas_view_precio_servicios">Service Price</string>
+    <string name="facturas_view_total">Total to pay</string>
+    <string name="facturas_view_text_servicio">Maintenance</string>
+    <string name="facturas_view_frenos">Brakes</string>
+    <string name="facturas_view_unidades">2 units</string>
+
+    <string name="factura_one_text1">Amount of Factures per month</string>
+    <string name="factura_one_text2">No. of Factures</string>
+    <string name="factura_two_text1">Percentage of Services Used</string>
+
+
+    <!--Dialoogo-->
+    <string name="pregunta">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--Ultima Parte-->
+    <string name="menu_autos_index">Cars</string>
+    <string name="menu_autos_ver">See Auto</string>
+    <string name="menu_autos_editar">Edit Auto</string>
+
+    <string name="menu_citas_index">Appointments</string>
+    <string name="menu_citas_ver">See Appointments</string>
+    <string name="menu_citas_reservar">Book Appointments</string>
+
+    <string name="menu_facturas_index">Invoices</string>
+    <string name="menu_facturas_ver">See Invoices</string>
+
+    <string name="menu_reportes_index">Reports</string>
+    <string name="menu_reportes_one">See Report 1</string>
+    <string name="menu_reportes_two">See Report 2</string>
+
+    <string name="sesion_pregunta">Are you sure?</string>
+    <string name="sesion_text">The current session will be closed </string>
+    <string name="sesion_si"> Yes, Exit</string>
+    <string name="sesion_no">No, Cancel</string>
+
+    <string name="reservado_title">THANKS FOR CONTACTING US</string>
+    <string name="reservado_text">We will contact you to confirm the availability of the mechanic shop or you can also call our Callcenter 984338491 at hotmetal123@gmail.com</string>
+    <string name="reservado_btn">Accept</string>
+
+    <string name = "service1"> Spark plug change </string>
+    <string name = "service2"> Oil change </string>
+    <string name = "service3"> Changing tires </string>
+
+    <string name="barra_mes">Mounth</string>
+
+    <string name="cita_view_fecha">Date</string>
+    <string name="cita_view_hora">Time</string>
+    <string name="cita_view_servicio">Service</string>
+    <string name="cita_view_modelo">Model</string>
+    <string name="cita_view_marca">Brand</string>
+
+    <string name="cita_cambio">Tire change</string>
+
+</resources>

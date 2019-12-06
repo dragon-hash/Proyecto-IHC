@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">HotMetal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">José Zuñiga</string>
+    <string name="nav_header_subtitle">josez@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="menu_principal">Principar</string>
+    <string name="menu_carros">Carros</string>
+    <string name="menu_citas">Citações</string>
+    <string name="menu_facturas">Faturas</string>
+    <string name="menu_reportes">Relatórios</string>
+
+    <!--Traducciones android studio-->
+    <string name="citasdiap">Escolha o dia de preferência</string>
+    <string name="citashorap">Escolha a hora da preferência</string>
+    <string name="citasservicio">Serviço solicitado</string>
+    <string name="citasmodelo">Modelo</string>
+    <string name="citasmarca">Marca</string>
+    <string name="citasreservar">Marque uma consulta</string>
+    <string-array name="citasservicios">
+        <item>Cambio de bujias</item>
+        <item>Cambio de aceite</item>
+        <item>Cambio de llantas</item>
+    </string-array>
+
+
+    <string name="conexion_btn_reintentar">Repetir</string>
+    <string name="conexion_text1">Não podemos nos conectar</string>
+    <string name="conexion_text2">Verifique se você ativou seus dados ou se está conectado via Wifi</string>
+
+    <string name="principal_registro">Cadastre-se</string>
+    <string name="principal_iniciar_sesion">Iniciar sessão</string>
+    <string name="principal_text1">DEDICADO AOS NOSSOS CLIENTES</string>
+    <string name="principal_text2">MISSÃO DA EMPRESA</string>
+    <string name="principal_text3">Fornecer um bom serviço de manutenção automotiva em geral. Mantenha os carros de nossos clientes em um estado de operação eficiente e seguro. Atendendo às suas necessidades e expectativas no melhor tempo possível. Saiba que você e seu veículo são os mais importantes.</string>
+    <string name="principal_llamada">Ligar</string>
+    <string name="principal_whatsapp">Whatsapp</string>
+
+    <string name="inicio_sesion_title">Entre com sua conta</string>
+    <string name="inicio_sesion_correo">Digite seu email</string>
+    <string name="inicio_sesion_clave">Digite sua senha</string>
+    <string name="inicio_sesion_olvido">Esqueceu sua senha?</string>
+    <string name="inicio_sesion_iniciar">Iniciar sessão</string>
+    <string name="inicio_sesion_facebook">Entrar com o Facebook</string>
+    <string name="inicio_sesion_gmail">Entre com o Google</string>
+
+    <string name="registro_title">Registre-se Grátis</string>
+    <string name="registro_nombre">Digite o nome</string>
+    <string name="registro_apellido">Digite o sobrenome</string>
+    <string name="registro_corrreo">Digite o email</string>
+    <string name="registro_clave">Digite a senha</string>
+    <string name="registro_captcha">Digite os caracteres da imagem</string>
+    <string name="registro_registrarse">Cadastre-se</string>
+
+    <string name="recuperar_title">Digite seu email, sua senha será enviada a você</string>
+    <string name="recuperar_corrreo">Digite o email</string>
+    <string name="recuperar_siguiente">Seguinte</string>
+
+    <string name="home_auto">Carros</string>
+    <string name="home_citas">Citações</string>
+    <string name="home_facturas">Faturas</string>
+    <string name="home_reportes">Relatórios</string>
+
+    <string name="factura_index_1">Fatura N° 00001</string>
+    <string name="factura_index_2">Fatura N° 00002</string>
+    <string name="factura_index_3">Fatura N° 00003</string>
+
+    <string name="citas_index_1">Citação N° 001</string>
+    <string name="citas_index_2">Citação N° 002</string>
+    <string name="citas_index_3">Citação N° 003</string>
+
+    <string name="reportes_index_1">1º Relatório</string>
+    <string name="reportes_index_2">2º Relatório</string>
+    <string name="reportes_index_text1">Quantia de faturas por mês</string>
+    <string name="reportes_index_text2">Porcentagem de peças</string>
+
+    <string name="auto_matricula">Inscrição</string>
+    <string name="auto_marca">Marca</string>
+    <string name="auto_modelo">Modelo</string>
+    <string name="auto_color">Cor</string>
+    <string name="auto_color_car">Lead Escuro</string>
+    <string name="auto_editar">Aplicar alterações</string>
+
+    <string name="facturas_view_repuesto">Substituição</string>
+    <string name="facturas_view_cantidad">Cantidad</string>
+    <string name="facturas_view_precio">Preço de Substituição</string>
+    <string name="facturas_view_servicios">Serviço</string>
+    <string name="facturas_view_precio_servicios">Preço do Serviço</string>
+    <string name="facturas_view_total">Preço Total</string>
+    <string name="facturas_view_text_servicio">Manutenção</string>
+    <string name="facturas_view_frenos">Freios</string>
+    <string name="facturas_view_unidades">2 unidade</string>
+
+    <string name="factura_one_text1">CQuantidade de faturas por mês</string>
+    <string name="factura_one_text2">Nº de faturas</string>
+    <string name="factura_two_text1">Porcentagem de Serviços Utilizados</string>
+
+    <!-- Dialoogo -->
+    <string name = "pregunta"> Tem certeza de que deseja sair? </string>
+    <string name = "yes"> Sim </string>
+    <string name = "no"> Não </string>
+
+    <!-- Última parte -->
+    <string name = "menu_autos_index"> Carros </string>
+    <string name = "menu_autos_ver"> Consulte Auto </string>
+    <string name = "menu_autos_editar"> Editar automático </string>
+
+    <string name = "menu_citas_index"> Compromissos </string>
+    <string name = "menu_citas_ver"> Consulte Compromissos </string>
+    <string name = "menu_citas_reservar"> Marcar compromissos </string>
+
+    <string name = "menu_facturas_index"> Faturas </string>
+    <string name = "menu_facturas_ver"> Consulte Faturas </string>
+
+    <string name = "menu_reportes_index"> Relatórios </string>
+    <string name = "menu_reportes_one"> Ver relatório 1 </string>
+    <string name = "menu_reportes_two"> Ver relatório 2 </string>
+
+    <string name = "sesion_pregunta"> Tem certeza? </string>
+    <string name = "sesion_text"> A sessão atual será fechada </string>
+    <string name = "sesion_si"> Sim, saia </string>
+    <string name = "sesion_no"> Não, Cancelar </string>
+
+    <string name = "reservado_title"> OBRIGADO POR NOS CONTATO </string>
+    <string name = "reservado_text"> Entraremos em contato para confirmar a disponibilidade da oficina mecânica ou você também pode discar para o nosso Callcenter 984338491 em hotmetal123@gmail.com </string>
+    <string name = "reservado_btn"> Aceitar </string>
+
+    <string name = "service1"> Alteração da vela de ignição </string>
+    <string name = "service2"> Troca de óleo </string>
+    <string name = "service3"> Trocando pneus </string>
+
+    <string name="barra_mes">Meses</string>
+
+    <string name="cita_view_fecha">Data</string>
+    <string name="cita_view_hora">Horário</string>
+    <string name="cita_view_servicio">Serviço</string>
+    <string name="cita_view_modelo">Modelo</string>
+    <string name="cita_view_marca">Marca</string>
+
+    <string name="cita_cambio">Mudança de pneu</string>
+
+
+</resources>

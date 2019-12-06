@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_principal"
+            android:icon="@drawable/casa"
+            android:title="@string/menu_principal" />
+    </group>
+
+    <item android:title="@string/menu_carros">
+        <menu>
+            <item
+                android:id="@+id/nav_carros"
+                android:icon="@drawable/coche_menu"
+                android:title="@string/menu_autos_index" />
+            <item
+                android:id="@+id/nav_carros_view"
+                android:icon="@drawable/ver_menu"
+                android:title="@string/menu_autos_ver" />
+            <item
+                android:id="@+id/nav_carros_edit"
+                android:icon="@drawable/editar_menu"
+                android:title="@string/menu_autos_editar" />
+        </menu>
+    </item>
+    <item android:title="@string/menu_citas">
+        <menu>
+            <item
+                android:id="@+id/nav_citas"
+                android:icon="@drawable/calendario_menu"
+                android:title="@string/menu_citas_index" />
+            <item
+                android:id="@+id/nav_citas_view"
+                android:icon="@drawable/ver_menu"
+                android:title="@string/menu_citas_ver" />
+            <item
+                android:id="@+id/nav_citas_reservar"
+                android:icon="@drawable/reservar_menu"
+                android:title="@string/menu_citas_reservar" />
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_facturas">
+        <menu>
+            <item
+                android:id="@+id/nav_facturas"
+                android:icon="@drawable/factura_menu"
+                android:title="@string/menu_facturas_index" />
+            <item
+                android:id="@+id/nav_facturas_view"
+                android:icon="@drawable/ver_menu"
+                android:title="@string/menu_facturas_ver" />
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_reportes">
+        <menu>
+            <item
+                android:id="@+id/nav_reportes"
+                android:icon="@drawable/reporte_menu"
+                android:title="@string/menu_reportes_index" />
+            <item
+                android:id="@+id/nav_reportes1"
+                android:icon="@drawable/reporte_menu"
+                android:title="@string/menu_reportes_one" />
+            <item
+                android:id="@+id/nav_reportes2"
+                android:icon="@drawable/reporte_menu"
+                android:title="@string/menu_reportes_two" />
+        </menu>
+    </item>
+
+   <!-- <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>-->
+
+</menu>

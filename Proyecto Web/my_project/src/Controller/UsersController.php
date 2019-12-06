@@ -1,0 +1,426 @@
+<?php
+namespace App\Controller;
+
+use App\Controller\AppController;
+use Cake\Mailer\Email;
+use Cake\Filesystem\Folder;
+use Cake\Filesystem\File;
+//aumente esto
+use Cake\ORM\TableRegistry;
+use Cake\Auth\DefaultPasswordHasher;
+use Cake\Utility\Security;
+
+/**
+ * Users Controller
+ *
+ * @property \App\Model\Table\UsersTable $Users
+ *
+ * @method \App\Model\Entity\User[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
+ */
+class UsersController extends AppController
+{
+    /**
+     * Index method
+     *
+     * @return \Cake\Http\Response|void
+     */
+	public function forgotpassword()
+    {
+        $this->loadComponent('CakeCaptcha.Captcha', [ 
+      'captchaConfig' => 'LoginCaptcha' 
+    ]); 
+
+        if($this->request->is('post')){
+
+              $isHuman = captcha_validate($this->request->getData()['CaptchaCode']); 
+              unset($this->request->getData()['CaptchaCode']); 
+              if($isHuman){
+		//consulta si existe email
+		      $query = $this->Users->findAllByEmail($this->request->getData()['email']);
+		      if ($query->count() != 0) { 
+			      $myemail = $this->request->getData('email');
+			      $mytoken = Security::hash(Security::randomBytes(25));
+
+			      $userTable = TableRegistry::get('Users');
+			      $user = $userTable->find('all')->where(['email'=>$myemail])->first();
+			      $user->token = $mytoken;
+			      if($userTable->save($user)){
+				  /*$email = new Email('envemail');
+				  $email->setTo($user->email)
+				    ->setProfile('envemail')
+				    ->setEmailFormat('html')
+				    ->setSubject('Please confirm your reset password')
+				    ->send('Hello '.$myemail.'<br/>Please click link below to reset your password<br/><br/><a href="http://127.0.0.1/~administrador/my_project/users/resetpassword/'.$mytoken.'">Reset Password</a>');*/
+				    $this->redirect(['action'=>'resetpassword',$mytoken]);
+			      }
+			} else { 
+				$this->Flash->error(__('This user does not exist'));
+			}
+		}else{
+                $this->Flash->error(__('CAPTCHA validation failed, try again.'));
+            }
+        }
+    }
+
+	public function resetpassword($token)
+    {
+        if($this->request->is('post')){
+            $hasher = new DefaultPasswordHasher();
+            //$mypass = $hasher->hash($this->request->getData('password'));
+        		$userTable = TableRegistry::get('Users');
+        		$user = $userTable->find('all')->where(['token'=>$token])->first();
+                  $this->Flash->success(__('Password changed'));
+            $user->password = $this->request->getData('password');
+            if($userTable->save($user)){
+                return $this->redirect(['action'=>'login']);
+            }
+
+	      }
+    }
+
+
+
+
+
+	public function perfil()
+    {
+        $user = $this->Users->get($this->request->getSession()->read('Auth.User.id'), [
+            'contain' => ['Roles', 'Cars', 'Factures']
+        ]);
+
+        $this->set('perfil', $user);
+    }
+	 public function deleteImage($img)
+  { 
+    if($img != 'nulo.png'){
+        $file = new File(WWW_ROOT.'img'.DS.$img); 
+        if ($file->delete()){
+          $this->Flash->success(__('Delete sucessfully.'));
+        }
+    }else{
+     $this->Flash->error(__('Does not have a profile picture!'));
+    }
+    return $this->redirect(['action'=>'perfil']);
+  }
+      public function update()
+    {
+        $user = $this->Users->get($this->request->getSession()->read('Auth.User.id'), [
+            'contain' => []
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $user = $this->Users->patchEntity($user, $this->request->getData());
+
+            $role = $this->request->getSession()->read('Auth.User.rol_id');
+            $user->rol_id=$role;
+            $user->status=1;
+            if ($this->Users->save($user)) {
+              //AQUI LAS IMAGENS
+              if(($this->request->getData('image'))['name'] != null)
+                {
+                  $filename = $this->request->getData('image');
+                  $idUser = $this->request->getSession()->read('Auth.User.id');
+                  //Obtener la extensión del archivo
+                  $ext = substr(strtolower(strrchr($filename['name'], '.')), 1);
+                  if( intval($filename['size'])>0 && 
+                  (intval($filename['size'])<=35000 && in_array($ext,['png','jpg' ,'gif','svg'])) )
+                  {
+                    $dir = new Folder( WWW_ROOT.'img');
+                    if(move_uploaded_file($filename['tmp_name'], WWW_ROOT.'img'.DS.$user['id'].'.'.$ext))
+                    {
+                      $this->Flash->success(__('The image has upload sucessfully.'));
+                    }else{
+                      $this->Flash->error(__('The image has not upload.'));
+	                    }
+                  }else{
+                    $this->Flash->error(__('The size image is invalid.'));
+                  }
+                }else{
+                  $this->Flash->error(__('The image is null.'));
+                }
+      //FIN IMAGENES
+                $this->Flash->success(__('The user has been saved.'));
+
+                return $this->redirect(['action' => 'perfil']);
+            }
+            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+        }
+        $roles = $this->Users->Roles->find('list', ['limit' => 200]);
+        $this->set(compact('user', 'roles'));
+    }
+    public function index()
+    {
+        $this->paginate = [
+            'contain' => ['Roles']
+        ];
+        $users = $this->paginate($this->Users);
+
+        $this->set(compact('users'));
+    }
+
+    /**
+     * View method
+     *
+     * @param string|null $id User id.
+     * @return \Cake\Http\Response|void
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function view($id = null)
+    {
+        $user = $this->Users->get($id, [
+            'contain' => ['Roles', 'Cars', 'Factures']
+        ]);
+
+        $this->set('user', $user);
+    }
+
+    /**
+     * Add method
+     *
+     * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
+     */
+    public function add()
+    {
+        $user = $this->Users->newEntity();
+        if ($this->request->is('post')) {
+            $user = $this->Users->patchEntity($user, $this->request->getData());
+
+		if ($this->Users->save($user)) {
+
+		$email = new Email('envemail');
+
+		$email->setTo($user->email)
+			->setProfile('envemail')
+			->setEmailFormat('html')
+		->setSubject('Bienvenido')
+		->send(sprintf('Bienvenido al Taller Mecanico Hot Metal %s', $user->name));
+		//AQUI LAS IMAGENS
+              if(($this->request->getData('image'))['name'] != null)
+                {
+                  $filename = $this->request->getData('image');
+                  $idUser = $this->request->getSession()->read('Auth.User.id');
+                  //Obtener la extensión del archivo
+                  $ext = substr(strtolower(strrchr($filename['name'], '.')), 1);
+                  if( intval($filename['size'])>0 && 
+                  (intval($filename['size'])<=35000 && in_array($ext,['png','jpg' ,'gif','svg'])) )
+                  {
+                    $dir = new Folder( WWW_ROOT.'img');
+                    if( move_uploaded_file($filename['tmp_name'], WWW_ROOT.'img'.DS.$user['id'].'.'.$ext) )
+                    {
+                      $this->Flash->success(__('The image has upload sucessfully.'));
+                    }else{
+                      $this->Flash->error(__('The image has not upload.'));
+                    }
+                  }else{
+                    $this->Flash->error(__('The size image is invalid.'));
+                  }
+                }else{
+                  $this->Flash->error(__('The image is null.'));
+                }
+      		//FIN IMAGENES
+
+
+
+
+
+                $this->Flash->success(__('The user has been saved.'));
+
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+        }
+        $roles = $this->Users->Roles->find('list', ['limit' => 200]);
+        $this->set(compact('user', 'roles'));
+    }
+
+    /**
+     * Edit method
+     *
+     * @param string|null $id User id.
+     * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function edit($id = null)
+    {
+        $user = $this->Users->get($id, [
+            'contain' => []
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $user = $this->Users->patchEntity($user, $this->request->getData());
+            if ($this->Users->save($user)) {
+                $this->Flash->success(__('The user has been saved.'));
+
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+        }
+        $roles = $this->Users->Roles->find('list', ['limit' => 200]);
+        $this->set(compact('user', 'roles'));
+    }
+
+    /**
+     * Delete method
+     *
+     * @param string|null $id User id.
+     * @return \Cake\Http\Response|null Redirects to index.
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function delete($id = null)
+    {
+        $this->request->allowMethod(['post', 'delete']);
+        $user = $this->Users->get($id);
+        if ($this->Users->delete($user)) {
+		 //ELIMINAR IMAGEN
+
+            $dir = new Folder( WWW_ROOT.'img');
+            $img = $dir->find($user->id.'\b.*', true);
+            
+            if ($img != null) {
+                $file = new File(WWW_ROOT.'img'.DS.$img[0]); 
+                $file->delete();
+                /*if ($file->delete()){
+                  $this->Flash->success(__('Image Delete sucessfully.'));
+                }*/
+            }
+
+            //FIN ELIMINAR IMAGEN
+            $this->Flash->success(__('The user has been deleted.'));
+        } else {
+            $this->Flash->error(__('The user could not be deleted. Please, try again.'));
+        }
+
+        return $this->redirect(['action' => 'index']);
+    }
+
+
+	public function login()
+{
+
+    $this->loadComponent('CakeCaptcha.Captcha', [ 
+      'captchaConfig' => 'LoginCaptcha' 
+    ]); 
+    if ($this->request->is('post')) {
+              // validate the user-entered Captcha code 
+      $isHuman = captcha_validate($this->request->getData()['CaptchaCode']); 
+
+      // clear previous user input, since each Captcha code can only be validated once 
+      unset($this->request->getData()['CaptchaCode']); 
+      if($isHuman){
+        $user = $this->Auth->identify();
+        //aqui empieza los del status
+         if ($user) {
+            if($user['status']==true){
+			//AQUI INSERTO EL ROLE
+                  if($user['role_id'] != null){ //verifica el status del usuario
+                     $role = $this->Users->Roles->findById($user['role_id']);
+                     $role=$role->toArray()[0]['name'];
+                     $user['role'] = $role;
+                     //Aqui guardo la sesion
+                     $this->Auth->setUser($user);
+                  }
+                  //Aqui redirecciona segun el role de usuario
+                  if(isset($user['role']) && $user['role'] === 'Administrador'){
+                      return $this->redirect(['action' => 'index']);
+                  }elseif (isset($user['role']) && $user['role'] === 'Cliente') {
+                      return $this->redirect(['controller' => 'cars', 'action' => 'index']);
+                  }
+
+                    //return $this->redirect($this->Auth->redirectUrl());
+            }else{
+                $this->Flash->error(__('Disabled login.'));
+            }
+        }else{
+             $this->Flash->error(__('Your username or password is incorrect.'));
+        }
+    } else{
+        $this->Flash->error(__('CAPTCHA validation failed, try again.'));
+    }
+    }
+}
+//metodo de register
+public function register() 
+  { 
+    // load the Captcha component and set its parameter 
+    $this->loadComponent('CakeCaptcha.Captcha', [ 
+      'captchaConfig' => 'RegisterCaptcha' 
+    ]); 
+
+    $user = $this->Users->newEntity(); 
+    if ($this->request->is('post')) { 
+
+      // validate the user-entered Captcha code 
+      $isHuman = captcha_validate($this->request->getData()['CaptchaCode']); 
+
+      // clear previous user input, since each Captcha code can only be validated once 
+      unset($this->request->getData()['CaptchaCode']); 
+ 
+      if ($isHuman) { 
+        $query = $this->Users->findAllByEmail($this->request->getData()['email']); 
+        if ($query->count() == 0) { 
+          $user = $this->Users->patchEntity($user, $this->request->getData()); 
+          //Aqui capturo el id del rol cliente
+          $rolid = $this->Users->Roles->findByName('Cliente');
+          $rolid = $rolid->toArray()[0]['id'];
+          //AQUI AGREGUE VALORES POR DEFECTO
+            $user->role_id=$rolid;
+            $user->status=1;
+
+
+
+          if ($this->Users->save($user)) { 
+		//Usuario registrado email
+		$email = new Email('envemail');
+		$email->setTo($user->email)
+		->setProfile('envemail')
+		->setEmailFormat('html')
+		->setSubject('Bienvenido')
+		->send(sprintf('Bienvenido al Taller Mecanico Hot Metal %s', $user->name));
+
+		//fin usuario registrado email
+            $this->Flash->success(__('The user has been saved.')); 
+            return $this->redirect(['action' => 'login']); 
+          } 
+          $this->Flash->error(__('Unable to add the user.')); 
+           $this->Flash->error(__($user)); 
+        } else { 
+          $this->Flash->error(__('This user already exists.')); 
+        } 
+      } else { 
+        $this->Flash->error(__('CAPTCHA validation failed, try again.')); 
+      } 
+        
+    } 
+    
+    $this->set('user', $user); 
+  } 
+
+  //fin metodo register
+	public function initialize()
+	{
+	    parent::initialize();
+	    $this->Auth->allow(['logout','register']);
+	    //$this->Auth->allow(['logout','register','forgotpassword','resetpassword']);
+	}
+
+	public function logout()
+	{
+	    //$this->Flash->success(__('You are now logged out.'));
+	     $this->Auth->logout();
+	   // return $this->redirect($this->Auth->logout());
+	    return $this->redirect($this->Auth->redirectUrl());
+	}
+	public function isAuthorized($user)
+	{
+	     
+	    if($user['status'] == true){ //verifica que el usuario este activo
+		
+		if(isset($user['role']) && $user['role'] === 'Cliente'){
+		    if(in_array($this->request->getParam('action'),['logout','perfil','update','deleteImage'])){
+		        return true;
+		    }
+		}
+		return parent::isAuthorized($user);
+
+	    }
+	    return false; //false
+	}
+}

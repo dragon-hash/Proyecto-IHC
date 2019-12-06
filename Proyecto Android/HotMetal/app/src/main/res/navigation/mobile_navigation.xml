@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_principal">
+
+    <fragment
+        android:id="@+id/nav_principal"
+        android:name="com.example.hotmetal.ui.home.HomeFragment"
+        android:label="@string/menu_principal"
+        tools:layout="@layout/fragment_home" />
+
+    <!--AUTOMOVILES FRAGMENTOS-->
+
+    <fragment
+        android:id="@+id/nav_carros"
+        android:name="com.example.hotmetal.ui.Automoviles.CarrosIndexFragment"
+        android:label="@string/menu_carros"
+        tools:layout="@layout/carros_index_fragment" />
+
+    <fragment
+        android:id="@+id/nav_carros_view"
+        android:name="com.example.hotmetal.ui.Automoviles.CarrosViewFragment"
+        android:label="@string/menu_carros"
+        tools:layout="@layout/carros_view_fragment" />
+
+    <fragment
+        android:id="@+id/nav_carros_edit"
+        android:name="com.example.hotmetal.ui.Automoviles.CarrosEditFragment"
+        android:label="@string/menu_carros"
+        tools:layout="@layout/carros_editar_fragment" />
+
+
+
+    <!--CITAS FRAGMENTOS-->
+
+    <fragment
+        android:id="@+id/nav_citas"
+        android:name="com.example.hotmetal.ui.Citas.CitasIndexFragment"
+        android:label="@string/menu_citas"
+        tools:layout="@layout/citas_index_fragment" />
+
+    <fragment
+        android:id="@+id/nav_citas_view"
+        android:name="com.example.hotmetal.ui.Citas.CitasViewFragment"
+        android:label="@string/menu_citas"
+        tools:layout="@layout/citas_view_fragment" />
+
+    <fragment
+        android:id="@+id/nav_citas_reservar"
+        android:name="com.example.hotmetal.ui.Citas.CitasReservarFragment"
+        android:label="@string/menu_citas"
+        tools:layout="@layout/citas_reservar_fragment" />
+
+    <!--FACTURAS FRAGMENTOS-->
+
+    <fragment
+        android:id="@+id/nav_facturas"
+        android:name="com.example.hotmetal.ui.Facturas.FacturasIndexFragment"
+        android:label="@string/menu_facturas"
+        tools:layout="@layout/citas_index_fragment" />
+
+    <fragment
+        android:id="@+id/nav_facturas_view"
+        android:name="com.example.hotmetal.ui.Facturas.FacturasViewFragment"
+        android:label="@string/menu_facturas"
+        tools:layout="@layout/facturas_view_fragment" />
+
+    <!--REPORTES FRAGMENTOS-->
+
+    <fragment
+        android:id="@+id/nav_reportes"
+        android:name="com.example.hotmetal.ui.Reportes.ReportesIndexFragment"
+        android:label="@string/menu_reportes"
+        tools:layout="@layout/reportes_index_fragment" />
+
+    <fragment
+        android:id="@+id/nav_reportes1"
+        android:name="com.example.hotmetal.ui.Reportes.ReportesViewOneFragment"
+        android:label="@string/menu_reportes"
+        tools:layout="@layout/reportes_view_one_fragment" />
+
+    <fragment
+        android:id="@+id/nav_reportes2"
+        android:name="com.example.hotmetal.ui.Reportes.ReportesViewTwoFragment"
+        android:label="@string/menu_reportes"
+        tools:layout="@layout/reportes_view_two_fragment" />
+
+    <!--<fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.hotmetal.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />-->
+</navigation>
